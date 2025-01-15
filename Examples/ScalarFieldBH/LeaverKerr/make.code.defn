@@ -1,0 +1,8 @@
+
+# Source files in this directory
+SRCS = NBI_ScalarKerrID_LeaverSolver_LeaverKerr.c \
+       NBI_ScalarKerrID_radial_profile_LeaverKerr2.c \
+       NBI_ScalarKerrID_phi_profile_LeaverKerr.c \
+       NBI_ScalarKerrID_spheroidal_harmonics2.c
+# Subdirectories containing source files
+SUBDIRS =
