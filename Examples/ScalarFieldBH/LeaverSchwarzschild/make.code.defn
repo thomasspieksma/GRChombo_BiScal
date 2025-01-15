@@ -1,0 +1,10 @@
+
+# Source files in this directory
+SRCS = NBI_ScalarKerrID_LeaverSolver_LeaverSchwarzschild.c \
+       NBI_ScalarKerrID_radial_profile_LeaverSchwarzschild.c \
+       NBI_ScalarKerrID_coef_LeaverSchwarzschild.c \
+       NBI_ScalarKerrID_phi_profile_LeaverSchwarzschild.c \
+       NBI_ScalarKerrID_phi_profile_LeaverSchwarzschild2.c \
+       NBI_ScalarKerrID_spherical_harmonics.c
+# Subdirectories containing source files
+SUBDIRS =

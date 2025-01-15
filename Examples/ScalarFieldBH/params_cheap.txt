@@ -8,15 +8,15 @@ verbosity = 0
 
 # location / naming of output files
 # output_path = "" # Main path for all files. Must exist!
-chk_prefix = /lustre/hpc/astro/spieksma/Chombo_folder2/GRChombo/Sims_Scalar/ScalarField_
-plot_prefix = /lustre/hpc/astro/spieksma/Chombo_folder2/GRChombo/Sims_Scalar/ScalarFieldp_
+chk_prefix = ScalarField_
+plot_prefix = ScalarFieldp_
 
 # If restarting from the IC Solver, uncomment this and put the 
 # file into the hdf5 folder (need to create this if not there)
 # restart_file = hdf5/InitialConditionsFinal.3d.hdf5
 
 # HDF5files are written every dt = L/N*dt_multiplier*checkpoint_interval
-checkpoint_interval = 500
+checkpoint_interval = 1
 # set to 0 to turn off plot files (except at t=0 and t=stop_time)
 # set to -1 to never ever print plotfiles
 plot_interval = 1
@@ -25,9 +25,9 @@ plot_vars = chi phi Ham Mom
 
 # subpaths - specific directories for hdf5, pout, extraction data
 # (these are created at runtime)
-hdf5_subpath = "hdf5"
-pout_subpath = "pout"
-data_subpath = "data"
+hdf5_subpath = /lustre/astro/spieksma/Sims_Scalar/Sims_Scalar/hdf5_new
+pout_subpath = /lustre/astro/spieksma/Sims_Scalar/Sims_Scalar/pout_new
+data_subpath = /lustre/astro/spieksma/Sims_Scalar/Sims_Scalar/data_new
 
 # change the name of output files
 # pout_prefix = "pout"
@@ -58,8 +58,8 @@ scalar_mass = 0.2
 # NB - if you have a non-cubic grid, you can specify 'N1' or 'N1_full',
 # 'N2' or 'N2_full' and 'N3' or 'N3_full' ( then dx_coarsest = L/N(max) )
 # NB - the N values need to be multiples of the block_factor
-N_full = 64
-L_full = 128
+N_full = 32
+L_full = 16
 
 # Maximum number of times you can regrid above coarsest level
 max_level = 3 # There are (max_level+1) grids, so min is zero
@@ -75,8 +75,8 @@ regrid_interval   = 0   0   0   0   0   0
 regrid_interval = 0 0 0 0 0 0
 
 # Max and min box sizes
-max_box_size = 16
-min_box_size = 16
+max_box_size = 32
+min_box_size = 8
 
 # this example uses a fixed grid
 # so tag precisely
@@ -128,7 +128,7 @@ extrapolating_vars = phi Pi
 
 # dt will be dx*dt_multiplier on each grid level
 dt_multiplier = 0.25
-stop_time = 100.0
+stop_time = 10.0
 # max_steps = 4
 
 # Spatial derivative order (only affects CCZ4 RHS)
