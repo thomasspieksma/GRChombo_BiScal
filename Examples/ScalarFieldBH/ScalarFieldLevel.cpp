@@ -264,7 +264,7 @@ void ScalarFieldLevel::specificPostTimeStep()
             // to the conditions set in params.txt
             interpolator.refresh();
 
-            // set up the query and execute it
+            // set up the query and execute it (?)
             std::array<double, CH_SPACEDIM> extraction_origin = {
                 0., m_p.L / 2, m_p.L / 2}; // specified point {x \in [0,L],y \in
                                            // [0,L], z \in [0,L]}
