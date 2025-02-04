@@ -113,8 +113,8 @@ G_Newton = 1.0
 
 # Scalar field initial data
 scalar_mass = 0.2
-spheroidicity_param = 0.0
-omega_c = 0.198957
+#We use gamma^2 here
+spheroidicity_param = -0.000196353
 initial_data_prefix = SR_Cloud_data/
 
 # Extraction data

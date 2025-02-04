@@ -30,7 +30,6 @@ class SimulationParameters : public SimulationParametersBase
         pp.load("G_Newton", G_Newton, 1.0);
         // pp.load("spheroidicity_param", spheroidicity_param, 0.0);
         pp.load("spheroidicity_param", initial_params.spheroidicity_param, 0.0);
-        pp.load("omega_c", initial_params.omega_c, 0.19);
         pp.load("scalar_mass", potential_params.scalar_mass, 0.2);
         pp.load("initial_data_prefix", initial_data_prefix);
         pp.load("inner_r", inner_r, 0.0);

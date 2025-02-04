@@ -40,8 +40,6 @@ class SR_Cloud_Initial
     struct params_t
         {
         double spheroidicity_param; 
-        double omega_c; 
-
     };
 
     //! Function to compute the value of all the initial vars on the grid
@@ -111,7 +109,7 @@ class SR_Cloud_Initial
         complex<double> gamm_qaur_term5_denom = sqrt(1.0 + 2.0 * ell_SH) * pow(3.0 + 2.0 * ell_SH, 2.0) * pow(5.0 + 2.0 * ell_SH, 2.0) * (7.0 + 2.0 * ell_SH);
         complex<double> gamm_qaur_term5 = gamm_qaur_term5_nom / gamm_qaur_term5_denom;
         
-        complex<double> phi_ang = spin_Y_l_m + pow(m_params.spheroidicity_param, 2.0) * nom_gamm_sq / denom_gamm_sq + 1.0/8.0 * pow(m_params.spheroidicity_param, 4.0) * (gamm_qaur_term1 - gamm_qaur_term2 - gamm_qaur_term3 + gamm_qaur_term4 + gamm_qaur_term5);
+        complex<double> phi_ang = spin_Y_l_m + m_params.spheroidicity_param * nom_gamm_sq / denom_gamm_sq + 1.0/8.0 * m_params.spheroidicity_param * m_params.spheroidicity_param * (gamm_qaur_term1 - gamm_qaur_term2 - gamm_qaur_term3 + gamm_qaur_term4 + gamm_qaur_term5);
 
         double phi_ang_real = real(phi_ang);
 
