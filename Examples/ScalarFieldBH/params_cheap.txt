@@ -25,9 +25,9 @@ plot_vars = chi phi Ham Mom
 
 # subpaths - specific directories for hdf5, pout, extraction data
 # (these are created at runtime)
-hdf5_subpath = /lustre/astro/spieksma/Sims_Scalar/Sims_Scalar/hdf5_new
-pout_subpath = /lustre/astro/spieksma/Sims_Scalar/Sims_Scalar/pout_new
-data_subpath = /lustre/astro/spieksma/Sims_Scalar/Sims_Scalar/data_new
+hdf5_subpath = /lustre/astro/spieksma/Sims_Scalar/Sims_Scalar/hdf5_line_ex_phi_hr
+pout_subpath = /lustre/astro/spieksma/Sims_Scalar/Sims_Scalar/pout_line_ex_phi_hr
+data_subpath = /lustre/astro/spieksma/Sims_Scalar/Sims_Scalar/data_line_ex_phi_hr
 
 # change the name of output files
 # pout_prefix = "pout"
@@ -127,8 +127,8 @@ extrapolating_vars = phi Pi
 # Evolution parameters
 
 # dt will be dx*dt_multiplier on each grid level
-dt_multiplier = 0.25
-stop_time = 10.0
+dt_multiplier = 0.125
+stop_time = 100.0
 # max_steps = 4
 
 # Spatial derivative order (only affects CCZ4 RHS)

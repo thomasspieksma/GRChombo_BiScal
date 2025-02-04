@@ -200,43 +200,33 @@ void ScalarFieldLevel::specificPostTimeStep()
 
     if (calculate_diagnostics)
     {
+        
     #ifdef USE_AHFINDER
     if (m_p.AH_activate && m_level == m_p.AH_params.level_to_run)
         m_bh_amr.m_ah_finder.solve(m_dt, m_time, m_restart_time);
+    #endif
 
         fillAllGhosts();
         Potential potential(m_p.potential_params);
         ScalarFieldWithPotential scalar_field(potential);
         BoxLoops::loop(MatterConstraints<ScalarFieldWithPotential>(
                            scalar_field, m_dx, m_p.G_Newton, c_Ham,
-                           Interval(c_Mom, c_Mom), c_Ham_abs_sum,
-                           Interval(c_Mom_abs_sum, c_Mom_abs_sum)),
+                           Interval(c_Mom, c_Mom)),
                        m_state_new, m_state_diagnostics, EXCLUDE_GHOST_CELLS);
-        CosmoDiagnostics<ScalarFieldWithPotential> cosmo_diagnostics(
-            scalar_field, m_dx, m_p.G_Newton);
-        BoxLoops::loop(cosmo_diagnostics, m_state_new, m_state_diagnostics,
-                       EXCLUDE_GHOST_CELLS);
 
         if (m_level == min_level)
         {
             // AMRReductions for diagnostic variables
             AMRReductions<VariableType::diagnostic> amr_reductions_diagnostic(
-                m_cosmo_amr);
-            double phys_vol = amr_reductions_diagnostic.sum(c_sqrt_gamma);
+                m_bh_amr);
             double L2_Ham = amr_reductions_diagnostic.norm(c_Ham);
             double L2_Mom = amr_reductions_diagnostic.norm(c_Mom);
-            double K_total = amr_reductions_diagnostic.sum(c_K_scaled);
-            m_cosmo_amr.set_rho_mean(
-                amr_reductions_diagnostic.sum(c_rho_scaled) / phys_vol);
-            m_cosmo_amr.set_S_mean(amr_reductions_diagnostic.sum(c_S_scaled) /
-                                   phys_vol);
-            m_cosmo_amr.set_K_mean(K_total / phys_vol);
 
             // AMRReductions for evolution variables
             AMRReductions<VariableType::evolution> amr_reductions_evolution(
-                m_cosmo_amr);
+                m_bh_amr);
 
-            double chi_mean = amr_reductions_evolution.sum(c_chi) / phys_vol;
+            double c_phi_abs = amr_reductions_evolution.norm(c_phi);
 
             // Write output file
             SmallDataIO data_out_file(m_p.data_path + "data_out", m_dt, m_time,
@@ -246,34 +236,32 @@ void ScalarFieldLevel::specificPostTimeStep()
             if (first_step)
             {
                 data_out_file.write_header_line(
-                    {"L^2_Ham", "L^2_Mom", "<chi>", "<rho>", "<K>"});
+                    {"L^2_Ham", "L^2_Mom", "abs(phi)","phi"});
             }
-            data_out_file.write_time_data_line({L2_Ham, L2_Mom, chi_mean,
-                                                m_cosmo_amr.get_rho_mean(),
-                                                m_cosmo_amr.get_K_mean()});
+            data_out_file.write_time_data_line({L2_Ham, L2_Mom, c_phi_abs, c_phi});
 
             // Use AMR Interpolator and do lineout data extraction
             // set up an interpolator
             // pass the boundary params so that we can use symmetries if
             // applicable
-            AMRInterpolator<Lagrange<4>> interpolator(
-                m_cosmo_amr, m_p.origin, m_p.dx, m_p.boundary_params,
+            AMRInterpolator<Lagrange<2>> interpolator(
+                m_bh_amr, m_p.origin, m_p.dx, m_p.boundary_params,
                 m_p.verbosity);
 
             // this should fill all ghosts including the boundary ones according
             // to the conditions set in params.txt
             interpolator.refresh();
 
-            // set up the query and execute it (?)
+            // set up the query and execute it
             std::array<double, CH_SPACEDIM> extraction_origin = {
-                0., m_p.L / 2, m_p.L / 2}; // specified point {x \in [0,L],y \in
-                                           // [0,L], z \in [0,L]}
-            // rho lineout
-            CustomExtraction rho_extraction(c_rho, m_p.lineout_num_points,
+                0., m_p.L / 2, m_p.L / 2}; // specified point {x \in [0,L],y \in [0,L], z \in [0,L]}
+            
+            // phi lineout
+            CustomExtraction phi_extraction(c_phi, c_phi, m_p.lineout_num_points,
                                             m_p.L, extraction_origin, m_dt,
                                             m_time);
-            rho_extraction.execute_query(&interpolator,
-                                         m_p.data_path + "rho_lineout");
+            phi_extraction.execute_query(&interpolator,
+                                         m_p.data_path + "phi_lineout");
         }
     }
 }

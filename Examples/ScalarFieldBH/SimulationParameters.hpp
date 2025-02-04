@@ -34,6 +34,9 @@ class SimulationParameters : public SimulationParametersBase
         pp.load("bh_mass", initial_params.bh_mass, 1.0);
         pp.load("scalar_mass", potential_params.scalar_mass, 0.1);
 
+        // Lineout params
+        pp.load("lineout_num_points", lineout_num_points, 10);
+
 #ifdef USE_AHFINDER
         double AH_guess =
             8. * initial_params.amplitude * initial_params.amplitude;
@@ -55,6 +58,7 @@ class SimulationParameters : public SimulationParametersBase
 
     // Initial data for matter and potential and BH
     double G_Newton;
+    int lineout_num_points;
     InitialScalarData::params_t initial_params;
     Potential::params_t potential_params;
 

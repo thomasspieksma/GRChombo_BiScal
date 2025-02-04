@@ -88,13 +88,13 @@ class CustomExtraction
             .setCoords(1, interp_y.data())
             .setCoords(2, interp_z.data())
             .addComp(m_comp1, interp_ham_data.data(), Derivative::LOCAL,
-                     VariableType::diagnostic); // evolution or diagnostic
+                     VariableType::evolution); // evolution or diagnostic
         InterpolationQuery query_mom(m_num_points);
         query_mom.setCoords(0, interp_x.data())
             .setCoords(1, interp_y.data())
             .setCoords(2, interp_z.data())
             .addComp(m_comp2, interp_mom_data.data(), Derivative::LOCAL,
-                     VariableType::diagnostic); // evolution or diagnostic
+                     VariableType::evolution); // evolution or diagnostic
 
         // submit the query
         a_interpolator->interp(query_ham);
@@ -106,21 +106,31 @@ class CustomExtraction
         SmallDataIO output_file(a_file_prefix, m_dt, m_time, restart_time,
                                 SmallDataIO::APPEND, first_step);
 
-        std::vector<std::string> header_line(2);
+        std::vector<std::string> header_line(m_num_points);
+        // if (first_step)
+        // {
+        //     header_line[0] = "Ham";
+        //     header_line[1] = "Mom";
+        //     output_file.write_header_line(header_line, "x");
+        // }
+
+        // for (int idx = 0; idx < m_num_points; ++idx)
+        // {
+        //     std::vector<double> data(2);
+        //     data[0] = interp_ham_data[idx];
+        //     data[1] = interp_mom_data[idx];
+        //     output_file.write_data_line(data, interp_x[idx]);
+        // }
         if (first_step)
         {
-            header_line[0] = "Ham";
-            header_line[1] = "Mom";
-            output_file.write_header_line(header_line, "x");
+            for (int i = 0; i < m_num_points; ++i)
+            {
+                header_line[i] =
+                    "x = " + to_string_with_precision(interp_x[i], 2);
+            }
+            output_file.write_header_line(header_line);
         }
-
-        for (int idx = 0; idx < m_num_points; ++idx)
-        {
-            std::vector<double> data(2);
-            data[0] = interp_ham_data[idx];
-            data[1] = interp_mom_data[idx];
-            output_file.write_data_line(data, interp_x[idx]);
-        }
+        output_file.write_time_data_line(interp_ham_data);
     }
 };
 

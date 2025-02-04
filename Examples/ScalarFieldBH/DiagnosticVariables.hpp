@@ -9,9 +9,9 @@
 // assign an enum to each variable
 enum
 {
-    c_Ham,
+    c_Ham,    //Hamiltonian Constraint
 
-    c_Mom,
+    c_Mom,    //Momentum Constraints
 
     NUM_DIAGNOSTIC_VARS
 };
@@ -21,7 +21,8 @@ namespace DiagnosticVariables
 static const std::array<std::string, NUM_DIAGNOSTIC_VARS> variable_names = {
     "Ham",
 
-    "Mom"};
+    "Mom"
+    };
 }
 
 #endif /* DIAGNOSTICVARIABLES_HPP */
