@@ -24,7 +24,7 @@
 #include "AMRReductions.hpp"
 #include "ComputePack.hpp"
 #include "ExcisionDiagnostics.hpp"
-// #include "FluxExtraction.hpp"
+#include "FluxExtraction.hpp"
 #include "GammaCalculator.hpp"
 #include "MatterEnergy.hpp"
 #include "SR_Cloud_Initial.hpp"
@@ -193,9 +193,9 @@ void ScalarFieldLevel::specificPostTimeStep()
         m_gr_amr.m_interpolator->refresh(fill_ghosts);
         m_gr_amr.fill_multilevel_ghosts(VariableType::diagnostic,
                                         Interval(c_flux1, c_flux2));
-        // FluxExtraction my_extraction(m_p.extraction_params, m_dt, m_time,
-        //                              m_restart_time);
-        // my_extraction.execute_query(m_gr_amr.m_interpolator);
+        FluxExtraction my_extraction(m_p.extraction_params, m_dt, m_time,
+                                     m_restart_time);
+        my_extraction.execute_query(m_gr_amr.m_interpolator);
     }
 }
 

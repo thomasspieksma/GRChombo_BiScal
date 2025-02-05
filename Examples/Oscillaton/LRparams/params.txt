@@ -1,8 +1,8 @@
 #Params for runtime inputs
 
 verbosity = 0
-chk_prefix = /cosma6/data/dp174/dc-cui1/Boost/OscillatonKVLRchk
-plot_prefix = /cosma6/data/dp174/dc-cui1/Boost/OscillatonKVLRplt
+chk_prefix = /lustre/astro/spieksma/Sims_Scalar/SR_Cloud/SR_Cloud_chk
+plot_prefix = /lustre/astro/spieksma/Sims_Scalar/SR_Cloud/SR_Cloud_plt
 #restart_file = /home/dc-cui1/rds/rds-dirac-dp131/dc-cui1/Oscillaton/ScalarField2_000200.3d.hdf5
 
 # 'N' is the number of subdivisions in each direction of a cubic box
@@ -18,6 +18,10 @@ L_full = 128
 # Regridding - in this example use a fixed grid
 #tag_buffer_size = 0
 #regrid_interval = 0 0 0 0
+
+hdf5_subpath = /lustre/astro/spieksma/Sims_Scalar/SR_Cloud/hdf5
+pout_subpath = /lustre/astro/spieksma/Sims_Scalar/SR_Cloud/pout
+data_subpath = /lustre/astro/spieksma/Sims_Scalar/SR_Cloud/data
 
 # or for Ham_abs_sum
 tag_buffer_size = 2
