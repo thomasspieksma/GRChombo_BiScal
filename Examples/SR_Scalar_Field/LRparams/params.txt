@@ -82,9 +82,9 @@ stop_time = 100.0
 
 # subpaths - specific directories for hdf5, pout, extraction data
 # (these are created at runtime)
-hdf5_subpath = "hdf5"
+hdf5_subpath = /lustre/astro/spieksma/Sims_Scalar/SR_Cloud/hdf5
 pout_subpath = "pout"
-data_subpath = "data"
+data_subpath = /lustre/astro/spieksma/Sims_Scalar/SR_Cloud/data
 
 #Lapse evolution
 lapse_power = 1.0
