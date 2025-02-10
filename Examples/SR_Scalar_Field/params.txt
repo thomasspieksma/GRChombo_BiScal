@@ -1,10 +1,10 @@
 #Params for runtime inputs
 
-verbosity = 0
+verbosity = 2
 
-# output_path = "" # Main path for all files. Must exist!
-chk_prefix = /lustre/astro/spieksma/Sims_Scalar/SR_Cloud/SR_Cloud_chk
-plot_prefix = /lustre/astro/spieksma/Sims_Scalar/SR_Cloud/SR_Cloud_plt
+#output_path = "" # Main path for all files. Must exist!
+chk_prefix = SR_Cloud_chk
+plot_prefix = SR_Cloud_plt
 
 
 #STILL CHANGE THOMAS
@@ -32,7 +32,7 @@ regrid_threshold = 0.1
 
 # Level data
 # Maximum number of times you can regrid above coarsest level
-max_level = 8 # There are (max_level+1) grids, so min is zero
+max_level = 6 # There are (max_level+1) grids, so min is zero
 # Max and min box size - for load balancing
 max_box_size = 16
 min_box_size = 16
@@ -87,7 +87,7 @@ hdf5_subpath = /lustre/astro/spieksma/Sims_Scalar/SR_Cloud/hdf5
 pout_subpath = /lustre/astro/spieksma/Sims_Scalar/SR_Cloud/pout
 data_subpath = /lustre/astro/spieksma/Sims_Scalar/SR_Cloud/data
 
-print_progress_only_to_rank_0 = 1
+#print_progress_only_to_rank_0 = 1
 
 
 #Lapse evolution

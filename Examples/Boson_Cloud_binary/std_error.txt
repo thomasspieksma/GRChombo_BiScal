@@ -1,0 +1,5 @@
+Parameter: nan_check = 0 warning: should not normally be disabled !!!
+Parameter: kappa1 = 0 warning: should be greater than 0.0 to damp constraints (see arXiv:1106.2254). !!!
+srun: Job step aborted: Waiting up to 602 seconds for job step to finish.
+slurmstepd: error: *** JOB 49872685 ON node721 CANCELLED AT 2025-02-06T22:17:55 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 49872685.0 ON node721 CANCELLED AT 2025-02-06T22:17:55 DUE TO TIME LIMIT ***
