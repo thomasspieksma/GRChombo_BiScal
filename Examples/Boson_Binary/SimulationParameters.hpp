@@ -28,7 +28,7 @@ class SimulationParameters : public SimulationParametersBase
     void read_params(GRParmParse &pp)
     {
         // Initial scalar field data
-        initial_params.center =
+        //initial_params.center =
             center; // already read in SimulationParametersBase
         pp.load("G_Newton", G_Newton, 1.0);
         pp.load("spheroidicity_param", initial_params.spheroidicity_param, 0.0);

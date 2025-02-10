@@ -46,13 +46,6 @@ class InitialSR_boson
 
     };
 
-//  //! The constructor
-//     InitialScalarData(const params_t a_params, const Potential a_potential,
-//                       const double a_dx, const double a_G_Newton = 1.0)
-//         : m_dx(a_dx), m_params(a_params), m_potential(a_potential),
-//           m_G_Newton(a_G_Newton)
-//     {
-//     }
     //! Function to compute the value of all the initial vars on the grid
     template <class data_t> void compute(Cell<data_t> current_cell) const
     {
