@@ -47,15 +47,25 @@ class InitialSR_boson
     };
 
     //! Function to compute the value of all the initial vars on the grid
-    template <class data_t> void compute(Cell<data_t> current_cell) const
+    //template <class data_t> void compute(Cell<data_t> current_cell) const
+    void compute(Cell<double> current_cell) const
     {
+
+        // may want to add to existing values so load the vars
+        ADMConformalVars::VarsWithGauge<double> vars;
+        // assign them zero to be sure they are zeroed
+        // including at boundaries where required
+        VarsTools::assign(vars, 0.);
       
         // where am I?
-        Coordinates<data_t> coords(current_cell, m_dx, m_params.center);
+        // Coordinates<data_t> coords(current_cell, m_dx, m_params.center);
+        const Coordinates<double> coords(current_cell, m_dx, m_center);
+
         const double x = coords.x;
         const double y = coords.y;
         const double z = coords.z;
-        data_t r = coords.get_radius();
+        // data_t r = coords.get_radius();
+        const double r = coords.get_radius();
         double rho2 = max(x * x + y * y, 1e-12);
         double r2sin2theta = rho2;
 
@@ -110,9 +120,10 @@ class InitialSR_boson
         
         complex<double> phi_ang = spin_Y_l_m + m_params.spheroidicity_param * nom_gamm_sq / denom_gamm_sq + 1.0/8.0 * m_params.spheroidicity_param * m_params.spheroidicity_param * (gamm_qaur_term1 - gamm_qaur_term2 - gamm_qaur_term3 + gamm_qaur_term4 + gamm_qaur_term5);
 
-        double phi_ang_real = real(phi_ang);
+        double phi_ang_real = real(spin_Y_l_m);
 
         double phi_tot = phi * phi_ang_real;
+
 
         // set the field values, as constant in space
         // ScalarField<Potential>::Vars<data_t> scalar_vars;
@@ -144,13 +155,14 @@ class InitialSR_boson
 
   protected:
     const double m_dx;
-    const double m_G_Newton;
-    const Potential m_potential;
-    const params_t m_params; //!< The matter initial condition params
+    // const double m_G_Newton;
+    // const Potential m_potential;
     const double m_L;
     const double m_spacing;
     const std::array<double, CH_SPACEDIM> m_center;
     const std::vector<double> m_phi_values;
+    const params_t m_params; //!< The matter initial condition params
+
 };
 
 #endif /* INITIALSCALARDATA_HPP_ */

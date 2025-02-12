@@ -25,7 +25,9 @@
 
 // Problem specific includes
 #include "ComputePack.hpp"
+#include "ExcisionDiagnostics.hpp"
 #include "GammaCalculator.hpp"
+#include "MatterEnergy.hpp"
 #include "KerrBH.hpp"
 #include "InitialSR_boson.hpp"
 #include "Potential.hpp"
@@ -56,7 +58,7 @@ void ScalarFieldLevel::initialData()
         pout() << "ScalarFieldLevel::initialData " << m_level << endl;
 
     //information about the csv file data
-    const int lines = 199828;
+    const int lines = 200000;
     const double spacing = 0.01; // in r for the values
 
     std::array<double, 1> tmp = {0.0};
@@ -77,11 +79,11 @@ void ScalarFieldLevel::initialData()
     BoxLoops::loop(SetValue(0.0), m_state_new, m_state_new, FILL_GHOST_CELLS);
     BoxLoops::loop(SetValue(0.0), m_state_diagnostics, m_state_diagnostics,
                    FILL_GHOST_CELLS);
-    BoxLoops::loop(InitialSR_boson(m_p.L, m_dx, m_p.center, spacing,
-                                     phi_values),
+    BoxLoops::loop(KerrBH(m_p.kerr_params, m_dx),m_state_new, m_state_new, INCLUDE_GHOST_CELLS);
+    BoxLoops::loop(InitialSR_boson(m_p.L, m_dx, m_p.center, spacing, phi_values),
                    m_state_new, m_state_new, FILL_GHOST_CELLS, disable_simd());
-    BoxLoops::loop(make_compute_pack(SetValue(0.), KerrBH(m_p.kerr_params, m_dx)),
-                    m_state_new, m_state_new, INCLUDE_GHOST_CELLS);
+
+
 
     // Not required as conformally flat, but fill Gamma^i to be sure
     fillAllGhosts();
@@ -149,10 +151,18 @@ void ScalarFieldLevel::prePlotLevel()
     fillAllGhosts();
     Potential potential(m_p.potential_params);
     ScalarFieldWithPotential scalar_field(potential);
-    BoxLoops::loop(
-        MatterConstraints<ScalarFieldWithPotential>(
-            scalar_field, m_dx, m_p.G_Newton, c_Ham, Interval(c_Mom, c_Mom)),
-        m_state_new, m_state_diagnostics, EXCLUDE_GHOST_CELLS);
+    BoxLoops::loop(MatterConstraints<ScalarFieldWithPotential>(
+                       scalar_field, m_dx, m_p.G_Newton, c_Ham,
+                       Interval(c_Mom, c_Mom)),
+                   m_state_new, m_state_diagnostics, EXCLUDE_GHOST_CELLS);
+    // BoxLoops::loop(
+    //     MatterEnergy<ScalarFieldWithPotential>(scalar_field, m_dx, m_p.center),
+    //     m_state_new, m_state_diagnostics, EXCLUDE_GHOST_CELLS);
+    // // excise within horizon
+    // BoxLoops::loop(
+    //     ExcisionDiagnostics(m_dx, m_p.center, m_p.inner_r, m_p.outer_r),
+    //     m_state_diagnostics, m_state_diagnostics, SKIP_GHOST_CELLS,
+    //     disable_simd());
 }
 #endif
 

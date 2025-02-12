@@ -13,15 +13,25 @@ enum
 
     c_Mom,    //Momentum Constraints
 
+    c_Ham_abs_sum,
+
+    c_Mom_abs_sum,
+
+    c_rho1,
+    c_rho2,
+    c_flux1,
+    c_flux2,
+    c_source1,
+    c_source2,
+
     NUM_DIAGNOSTIC_VARS
 };
 
 namespace DiagnosticVariables
 {
 static const std::array<std::string, NUM_DIAGNOSTIC_VARS> variable_names = {
-    "Ham",
-
-    "Mom"
+    "Ham",  "Ham_abs_sum", "Mom",   "Mom_abs_sum", "rho1",
+    "rho2", "flux1",       "flux2", "source1",     "source2"
     };
 }
 

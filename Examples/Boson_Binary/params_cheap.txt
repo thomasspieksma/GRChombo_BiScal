@@ -44,12 +44,14 @@ print_progress_only_to_rank_0 = 1
 # G_Newton = 1.0
 
 # Scalar field and BH initial data
-scalar_amplitude = 1e-5
+#scalar_amplitude = 1e-5
 kerr_mass = 1.0
 kerr_spin = 0.5
 kerr_spin_direction = 0.1 0.1 0.
 #bh_mass = 1.0
 scalar_mass = 0.2
+spheroidicity_param = -0.000196353
+initial_data_prefix = SR_Cloud_data/
 
 #################################################
 # Grid parameters
