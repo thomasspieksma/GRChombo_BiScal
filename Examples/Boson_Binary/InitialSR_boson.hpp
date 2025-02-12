@@ -40,9 +40,7 @@ class InitialSR_boson
     struct params_t
         {
         double spheroidicity_param; 
-        //double bh_mass;   //!< Mass on the initial BH
-        std::array<double, CH_SPACEDIM>
-            center; //!< Centre of grid, for working out coords if neeeded
+        std::array<double, CH_SPACEDIM> center; //!< Centre of grid, for working out coords if neeeded
 
     };
 
@@ -64,7 +62,6 @@ class InitialSR_boson
         const double x = coords.x;
         const double y = coords.y;
         const double z = coords.z;
-        // data_t r = coords.get_radius();
         const double r = coords.get_radius();
         double rho2 = max(x * x + y * y, 1e-12);
         double r2sin2theta = rho2;
@@ -82,16 +79,14 @@ class InitialSR_boson
         int m_SH = 1;
         int s_SH = 0;
 
-        // SphericalHarmonics::Y_lm_t<double> spi_Y_Min2Plusl_m = SphericalHarmonics::spin_Y_lm(x, y, z, s_SH, -2.0 + ell_SH, m_SH);
         SphericalHarmonics::Y_lm_t<double> spi_Y_2Plusl_m = SphericalHarmonics::spin_Y_lm(x, y, z, s_SH, 2.0 + ell_SH, m_SH);
-        // SphericalHarmonics::Y_lm_t<double> spi_Y_Min4Plusl_m = SphericalHarmonics::spin_Y_lm(x, y, z, s_SH, -4.0 + ell_SH, m_SH);
         SphericalHarmonics::Y_lm_t<double> spi_Y_l_m = SphericalHarmonics::spin_Y_lm(x, y, z, s_SH, ell_SH, m_SH);
         SphericalHarmonics::Y_lm_t<double> spi_Y_4Plusl_m = SphericalHarmonics::spin_Y_lm(x, y, z, s_SH, 4.0 + ell_SH, m_SH);
 
         const   complex<double> i(0.0,1.0);
-        complex<double> spin_Y_Min2Plusl_m = 0.0; //spi_Y_Min2Plusl_m.Real + i * spi_Y_Min2Plusl_m.Im;
+        complex<double> spin_Y_Min2Plusl_m = 0.0; 
         complex<double> spin_Y_2Plusl_m = spi_Y_2Plusl_m.Real + i * spi_Y_2Plusl_m.Im;
-        complex<double> spin_Y_Min4Plusl_m = 0.0; //spi_Y_Min4Plusl_m.Real + i * spi_Y_Min4Plusl_m.Im;
+        complex<double> spin_Y_Min4Plusl_m = 0.0; 
         complex<double> spin_Y_l_m = spi_Y_l_m.Real + i * spi_Y_l_m.Im;
         complex<double> spin_Y_4Plusl_m = spi_Y_4Plusl_m.Real + i * spi_Y_4Plusl_m.Im;
 
@@ -124,39 +119,14 @@ class InitialSR_boson
 
         double phi_tot = phi * phi_ang_real;
 
-
-        // set the field values, as constant in space
-        // ScalarField<Potential>::Vars<data_t> scalar_vars;
-
-        // scalar_vars.phi = phi_tot;
-        // scalar_vars.Pi = 0.0;
-
-        // Set the background for a Schwazschild BH in isotropic coords
-        //data_t psi = 1.0 + 0.5 * m_params.bh_mass / r;
-        //data_t chi = pow(psi, -4.0);
-
-        // calculate the appropriate value of K to solve the constraints
-        //data_t V_of_phi, dVdphi;
-        //m_potential.compute_potential(V_of_phi, dVdphi, scalar_vars);
-        //data_t K_squared = 24.0 * M_PI * m_G_Newton * V_of_phi;
-        //data_t K = sqrt(K_squared);
-
         // store the vars
         current_cell.store_vars(phi_tot, c_phi);
         current_cell.store_vars(0.0, c_Pi);
-        //current_cell.store_vars(scalar_vars);
-        //current_cell.store_vars(K, c_K);
-        //current_cell.store_vars(chi, c_chi);
-        //current_cell.store_vars(1.0, c_h11);
-        //current_cell.store_vars(1.0, c_h22);
-        //current_cell.store_vars(1.0, c_h33);
-        //current_cell.store_vars(1.0, c_lapse);
+
     }
 
   protected:
     const double m_dx;
-    // const double m_G_Newton;
-    // const Potential m_potential;
     const double m_L;
     const double m_spacing;
     const std::array<double, CH_SPACEDIM> m_center;

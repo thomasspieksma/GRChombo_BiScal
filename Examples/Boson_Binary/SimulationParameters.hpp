@@ -28,11 +28,8 @@ class SimulationParameters : public SimulationParametersBase
     void read_params(GRParmParse &pp)
     {
         // Initial scalar field data
-        //initial_params.center =
-            center; // already read in SimulationParametersBase
         pp.load("G_Newton", G_Newton, 1.0);
         pp.load("spheroidicity_param", initial_params.spheroidicity_param, 0.0);
-        // pp.load("scalar_amplitude", initial_params.amplitude, 0.1);
         pp.load("scalar_mass", potential_params.scalar_mass, 0.2);
         pp.load("kerr_mass", kerr_params.mass);
         pp.load("kerr_spin", kerr_params.spin);
@@ -47,9 +44,6 @@ class SimulationParameters : public SimulationParametersBase
         pp.load("lineout_num_points", lineout_num_points, 10);
 
 #ifdef USE_AHFINDER
-        //double AH_guess =
-        //    8. * initial_params.amplitude * initial_params.amplitude;
-        //pp.load("AH_initial_guess", AH_initial_guess, AH_guess);
         pp.load("AH_initial_guess", AH_initial_guess, 0.5 * kerr_params.mass);
 
 #endif
@@ -62,9 +56,6 @@ class SimulationParameters : public SimulationParametersBase
                            0.2 / coarsest_dx / dt_multiplier,
                        "oscillations of scalar field do not appear to be "
                        "resolved on coarsest level");
-        // warn_parameter("bh_mass", initial_params.bh_mass,
-        //                initial_params.bh_mass < 0.1 * L,
-        //                "gives a BH size greater than 0.1 times the domain L");
     }
 
     // Initial data for matter and potential and BH

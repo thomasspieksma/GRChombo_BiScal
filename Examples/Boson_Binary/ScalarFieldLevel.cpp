@@ -155,14 +155,14 @@ void ScalarFieldLevel::prePlotLevel()
                        scalar_field, m_dx, m_p.G_Newton, c_Ham,
                        Interval(c_Mom, c_Mom)),
                    m_state_new, m_state_diagnostics, EXCLUDE_GHOST_CELLS);
-    // BoxLoops::loop(
-    //     MatterEnergy<ScalarFieldWithPotential>(scalar_field, m_dx, m_p.center),
-    //     m_state_new, m_state_diagnostics, EXCLUDE_GHOST_CELLS);
-    // // excise within horizon
-    // BoxLoops::loop(
-    //     ExcisionDiagnostics(m_dx, m_p.center, m_p.inner_r, m_p.outer_r),
-    //     m_state_diagnostics, m_state_diagnostics, SKIP_GHOST_CELLS,
-    //     disable_simd());
+    BoxLoops::loop(
+        MatterEnergy<ScalarFieldWithPotential>(scalar_field, m_dx, m_p.center),
+        m_state_new, m_state_diagnostics, EXCLUDE_GHOST_CELLS);
+    // excise within horizon
+    BoxLoops::loop(
+        ExcisionDiagnostics(m_dx, m_p.center, m_p.inner_r, m_p.outer_r),
+        m_state_diagnostics, m_state_diagnostics, SKIP_GHOST_CELLS,
+        disable_simd());
 }
 #endif
 
