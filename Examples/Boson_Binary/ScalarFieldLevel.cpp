@@ -28,6 +28,7 @@
 #include "ExcisionDiagnostics.hpp"
 #include "GammaCalculator.hpp"
 #include "MatterEnergy.hpp"
+#include "FluxExtraction.hpp"
 #include "KerrBH.hpp"
 #include "InitialSR_boson.hpp"
 #include "Potential.hpp"
@@ -64,7 +65,6 @@ void ScalarFieldLevel::initialData()
     std::array<double, 1> tmp = {0.0};
     std::vector<double> phi_values;
 
-
     std::string phi_file(m_p.initial_data_prefix + "radial_profile_alpha02.csv");
     ifstream ifs0(phi_file);
 
@@ -82,7 +82,6 @@ void ScalarFieldLevel::initialData()
     BoxLoops::loop(KerrBH(m_p.kerr_params, m_dx),m_state_new, m_state_new, INCLUDE_GHOST_CELLS);
     BoxLoops::loop(InitialSR_boson(m_p.L, m_dx, m_p.center, spacing, phi_values),
                    m_state_new, m_state_new, FILL_GHOST_CELLS, disable_simd());
-
 
 
     // Not required as conformally flat, but fill Gamma^i to be sure
@@ -153,7 +152,8 @@ void ScalarFieldLevel::prePlotLevel()
     ScalarFieldWithPotential scalar_field(potential);
     BoxLoops::loop(MatterConstraints<ScalarFieldWithPotential>(
                        scalar_field, m_dx, m_p.G_Newton, c_Ham,
-                       Interval(c_Mom, c_Mom)),
+                       Interval(c_Mom, c_Mom),c_Ham_abs_sum,
+                       Interval(c_Mom_abs_sum, c_Mom_abs_sum)),
                    m_state_new, m_state_diagnostics, EXCLUDE_GHOST_CELLS);
     BoxLoops::loop(
         MatterEnergy<ScalarFieldWithPotential>(scalar_field, m_dx, m_p.center),
@@ -245,8 +245,17 @@ void ScalarFieldLevel::specificPostTimeStep()
         ScalarFieldWithPotential scalar_field(potential);
         BoxLoops::loop(MatterConstraints<ScalarFieldWithPotential>(
                            scalar_field, m_dx, m_p.G_Newton, c_Ham,
-                           Interval(c_Mom, c_Mom)),
+                           Interval(c_Mom, c_Mom), c_Ham_abs_sum,
+                           Interval(c_Mom_abs_sum, c_Mom_abs_sum)),
                        m_state_new, m_state_diagnostics, EXCLUDE_GHOST_CELLS);
+        BoxLoops::loop(MatterEnergy<ScalarFieldWithPotential>(scalar_field,
+                                                              m_dx, m_p.center),
+                       m_state_new, m_state_diagnostics, EXCLUDE_GHOST_CELLS);
+        // excise within horizon
+        BoxLoops::loop(
+            ExcisionDiagnostics(m_dx, m_p.center, m_p.inner_r, m_p.outer_r),
+            m_state_diagnostics, m_state_diagnostics, SKIP_GHOST_CELLS,
+            disable_simd());
 
         if (m_level == min_level)
         {
@@ -255,6 +264,10 @@ void ScalarFieldLevel::specificPostTimeStep()
                 m_bh_amr);
             double L2_Ham = amr_reductions_diagnostic.norm(c_Ham);
             double L2_Mom = amr_reductions_diagnostic.norm(c_Mom);
+            double rho1_sum = amr_reductions_diagnostic.sum(c_rho1);
+            double rho2_sum = amr_reductions_diagnostic.sum(c_rho2);
+            double source1_sum = amr_reductions_diagnostic.sum(c_source1);
+            double source2_sum = amr_reductions_diagnostic.sum(c_source2);
 
             // AMRReductions for evolution variables
             AMRReductions<VariableType::evolution> amr_reductions_evolution(
@@ -266,13 +279,24 @@ void ScalarFieldLevel::specificPostTimeStep()
             SmallDataIO data_out_file(m_p.data_path + "data_out", m_dt, m_time,
                                       m_restart_time, SmallDataIO::APPEND,
                                       first_step);
+
             data_out_file.remove_duplicate_time_data();
+
             if (first_step)
             {
                 data_out_file.write_header_line(
-                    {"L^2_Ham", "L^2_Mom", "abs(phi)","phi"});
+                    {"L^2_Ham", "L^2_Mom","rho1","rho2","source1","source2","abs(phi)","phi"});
             }
-            data_out_file.write_time_data_line({L2_Ham, L2_Mom, c_phi_abs, c_phi});
+            data_out_file.write_time_data_line({L2_Ham, L2_Mom, rho1_sum, rho2_sum, source1_sum, source2_sum, c_phi_abs, c_phi});
+
+            // Now refresh the interpolator and do the interpolation
+            bool fill_ghosts = false;
+            m_gr_amr.m_interpolator->refresh(fill_ghosts);
+            m_gr_amr.fill_multilevel_ghosts(VariableType::diagnostic,
+                                        Interval(c_flux1, c_flux2));
+            FluxExtraction my_extraction(m_p.extraction_params, m_dt, m_time,
+                                     m_restart_time);
+            my_extraction.execute_query(m_bh_amr.m_interpolator);
 
             // Use AMR Interpolator and do lineout data extraction
             // set up an interpolator

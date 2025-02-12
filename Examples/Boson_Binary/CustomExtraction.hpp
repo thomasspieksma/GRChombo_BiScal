@@ -106,6 +106,9 @@ class CustomExtraction
         SmallDataIO output_file(a_file_prefix, m_dt, m_time, restart_time,
                                 SmallDataIO::APPEND, first_step);
 
+        output_file.remove_duplicate_time_data();
+
+
         std::vector<std::string> header_line(m_num_points);
         // if (first_step)
         // {

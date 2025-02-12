@@ -313,9 +313,12 @@ void ScalarFieldLevel::specificPostTimeStep()
             // phi lineout
             CustomExtraction phi_extraction(c_phi, c_phi, m_p.lineout_num_points,
                                             m_p.L, extraction_origin, m_dt,
-                                            m_time);
+                                            m_time,m_restart_time);
+            phi_extraction.remove_duplicate_time_data();
+
             phi_extraction.execute_query(&interpolator,
                                          m_p.data_path + "phi_lineout");
+            
         }
     }
 }

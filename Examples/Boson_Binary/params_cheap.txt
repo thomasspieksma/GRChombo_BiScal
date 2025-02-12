@@ -7,7 +7,7 @@
 verbosity = 2
 
 # location / naming of output files
-# output_path = "" # Main path for all files. Must exist!
+output_path = "/lustre/astro/spieksma/Sims_Scalar/Boson_Cloud_Binary" # Main path for all files. Must exist!
 chk_prefix = ScalarField_
 plot_prefix = ScalarFieldp_
 
@@ -25,9 +25,9 @@ plot_vars = chi phi Ham Mom
 
 # subpaths - specific directories for hdf5, pout, extraction data
 # (these are created at runtime)
-hdf5_subpath = /lustre/astro/spieksma/Sims_Scalar/Boson_Cloud_Binary/hdf5
-pout_subpath = /lustre/astro/spieksma/Sims_Scalar/Boson_Cloud_Binary/pout
-data_subpath = /lustre/astro/spieksma/Sims_Scalar/Boson_Cloud_Binary/data
+hdf5_subpath = /hdf5
+pout_subpath = /pout
+data_subpath = /data
 
 # change the name of output files
 # pout_prefix = "pout"
