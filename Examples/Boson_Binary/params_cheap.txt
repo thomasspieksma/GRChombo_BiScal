@@ -4,7 +4,7 @@
 #################################################
 # Filesystem parameters
 
-verbosity = 2
+verbosity = 0
 
 # location / naming of output files
 output_path = "/lustre/astro/spieksma/Sims_Scalar/Boson_Cloud_Binary" # Main path for all files. Must exist!
@@ -16,10 +16,10 @@ plot_prefix = ScalarFieldp_
 # restart_file = hdf5/InitialConditionsFinal.3d.hdf5
 
 # HDF5files are written every dt = L/N*dt_multiplier*checkpoint_interval
-checkpoint_interval = 1
+checkpoint_interval = 20
 # set to 0 to turn off plot files (except at t=0 and t=stop_time)
 # set to -1 to never ever print plotfiles
-plot_interval = 1
+plot_interval = 10
 num_plot_vars = 4
 plot_vars = chi phi Ham Mom
 
@@ -46,7 +46,7 @@ print_progress_only_to_rank_0 = 1
 # Scalar field and BH initial data
 #scalar_amplitude = 1e-5
 kerr_mass = 1.0
-kerr_spin = 0.5
+kerr_spin = 0.687045
 kerr_spin_direction = 0.1 0.1 0.
 #bh_mass = 1.0
 scalar_mass = 0.2
@@ -63,11 +63,11 @@ initial_data_prefix = SR_Cloud_data/
 # NB - if you have a non-cubic grid, you can specify 'N1' or 'N1_full',
 # 'N2' or 'N2_full' and 'N3' or 'N3_full' ( then dx_coarsest = L/N(max) )
 # NB - the N values need to be multiples of the block_factor
-N_full = 32
-L_full = 16
+N_full = 64
+L_full = 32
 
 # Maximum number of times you can regrid above coarsest level
-max_level = 3 # There are (max_level+1) grids, so min is zero
+max_level = 7 # There are (max_level+1) grids, so min is zero
 
 # Frequency of regridding at each level and thresholds on the tagging
 # Need one for each level except the top one, ie max_level items
@@ -101,7 +101,7 @@ isPeriodic = 0 0 0
 # 0 = static, 1 = sommerfeld, 2 = reflective
 # 3 = extrapolating, 4 = mixed
 # (see BoundaryConditions.hpp for details)
-hi_boundary = 4 4 4
+hi_boundary = 4 4 2
 lo_boundary = 0 0 0
 
 # if reflective boundaries selected, must set

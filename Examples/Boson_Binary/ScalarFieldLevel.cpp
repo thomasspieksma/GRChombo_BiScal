@@ -285,7 +285,7 @@ void ScalarFieldLevel::specificPostTimeStep()
             if (first_step)
             {
                 data_out_file.write_header_line(
-                    {"L^2_Ham", "L^2_Mom","rho1","rho2","source1","source2","abs(phi)","phi"});
+                    {"L^2_Ham","L^2_Mom","rho1","rho2","source1","source2","abs(phi)","phi"});
             }
             data_out_file.write_time_data_line({L2_Ham, L2_Mom, rho1_sum, rho2_sum, source1_sum, source2_sum, c_phi_abs, c_phi});
 

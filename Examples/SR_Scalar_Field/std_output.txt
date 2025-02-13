@@ -1,2 +1,0 @@
- number_procs = 512
- simd width (doubles) = 2

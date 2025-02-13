@@ -90,32 +90,34 @@ class InitialSR_boson
         complex<double> spin_Y_l_m = spi_Y_l_m.Real + i * spi_Y_l_m.Im;
         complex<double> spin_Y_4Plusl_m = spi_Y_4Plusl_m.Real + i * spi_Y_4Plusl_m.Im;
 
+        //This following implementation does not really work because of the square root of negative numbers. For now I proceed by putting in numbers by hand
+        //complex<double> nom_gamm_sq = -pow(3.0 + 2.0 * ell_SH, 2.0) * sqrt(5.0 + 2.0 * ell_SH) * sqrt(ell_SH * ell_SH - m_SH * m_SH) * sqrt(1.0 - 2.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * spin_Y_Min2Plusl_m + pow(1.0 - 2.0 * ell_SH, 2.0) * sqrt(-3.0 + 2.0 * ell_SH) * sqrt(1.0 + 2.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * sqrt(4.0 + 4.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * spin_Y_2Plusl_m;
+        //complex<double> denom_gamm_sq = 2.0 * sqrt(-3.0 + 2.0 * ell_SH) * sqrt(1.0 + 2.0 * ell_SH) * sqrt(5.0 + 2.0 * ell_SH) * pow(-3.0 + 4.0 * ell_SH + 4.0 * ell_SH * ell_SH, 2.0);
+        complex<double> nom_gamm_sq = i * 2.0 * sqrt(6) * spin_Y_2Plusl_m;
+        complex<double> denom_gamm_sq = i * 50.0 * sqrt(21);
+        // complex<double> gamm_qaur_term1_nom = sqrt(ell_SH * ell_SH - m_SH * m_SH) * sqrt(9.0 - 6.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * sqrt(4.0 - 4.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * sqrt(1.0 - 2.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * spin_Y_Min4Plusl_m;
+        // complex<double> gamm_qaur_term1_denom = sqrt(-7.0 + 2.0 * ell_SH) * (-5.0 + 2.0 * ell_SH) * sqrt(1.0 + 2.0 * ell_SH) * pow(3.0 -8.0 * ell_SH + 4.0 * ell_SH * ell_SH, 2.0);
+        // complex<double> gamm_qaur_term1 = gamm_qaur_term1_nom / gamm_qaur_term1_denom;
+        
+        // complex<double> gamm_qaur_term2_nom = 8.0 * sqrt(ell_SH * ell_SH - m_SH * m_SH) * sqrt(1.0 - 2.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * (-1.0 + 4.0 * m_SH * m_SH) * spin_Y_Min2Plusl_m;
+        // complex<double> gamm_qaur_term2_denom = pow(1.0 - 2.0 * ell_SH, 4.0) * (-5.0 + 2.0 * ell_SH) * sqrt(-3.0 + 2.0 * ell_SH) * sqrt(1.0 + 2.0 * ell_SH) * (3.0 + 2.0 * ell_SH);
+        // complex<double> gamm_qaur_term2 = gamm_qaur_term2_nom / gamm_qaur_term2_denom;
+        
+        // complex<double> gamm_qaur_term3_nom = ((ell_SH * ell_SH - m_SH * m_SH) * (1.0 - 2.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) / (pow(1.0 - 2.0 * ell_SH, 4.0) * (-3.0 + 2.0 * ell_SH)) + ((1.0 + 2.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * (4.0 + 4.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH)) / (pow(3.0 + 2.0 * ell_SH, 4.0) * (5.0 + 2.0 * ell_SH))) * spin_Y_l_m;
+        // complex<double> gamm_qaur_term3_denom = 1.0 + 2.0 * ell_SH;
+        // complex<double> gamm_qaur_term3 = gamm_qaur_term3_nom / gamm_qaur_term3_denom;
+        
+        // complex<double> gamm_qaur_term4_nom = 8.0 * sqrt(1.0 + 2.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * sqrt(4.0 + 4.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * (-1.0 + 4.0 * m_SH * m_SH) * spin_Y_2Plusl_m;
+        // complex<double> gamm_qaur_term4_denom = (-1.0 + 2.0 * ell_SH) * sqrt(1.0 + 2.0 * ell_SH) * pow(3.0 + 2.0 * ell_SH, 4.0) * sqrt(5.0 + 2.0 * ell_SH) * (7.0 + 2.0 * ell_SH);
+        // complex<double> gamm_qaur_term4 = gamm_qaur_term4_nom / gamm_qaur_term4_denom;
+        
+        // complex<double> gamm_qaur_term5_nom = sqrt(1.0 + 2.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * sqrt(4.0 + 4.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * sqrt(9.0 + 6.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * sqrt(16.0 + 8.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * spin_Y_4Plusl_m;
+        // complex<double> gamm_qaur_term5_denom = sqrt(1.0 + 2.0 * ell_SH) * pow(3.0 + 2.0 * ell_SH, 2.0) * pow(5.0 + 2.0 * ell_SH, 2.0) * (7.0 + 2.0 * ell_SH);
+        // complex<double> gamm_qaur_term5 = gamm_qaur_term5_nom / gamm_qaur_term5_denom;
+        
+        complex<double> phi_ang = spin_Y_l_m + m_params.spheroidicity_param * nom_gamm_sq / denom_gamm_sq;// + 1.0/8.0 * m_params.spheroidicity_param * m_params.spheroidicity_param * (gamm_qaur_term1 - gamm_qaur_term2 - gamm_qaur_term3 + gamm_qaur_term4 + gamm_qaur_term5);
 
-        complex<double> nom_gamm_sq = -pow(3.0 + 2.0 * ell_SH, 2.0) * sqrt(5.0 + 2.0 * ell_SH) * sqrt(ell_SH * ell_SH - m_SH * m_SH) * sqrt(1.0 - 2.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * spin_Y_Min2Plusl_m + pow(1.0 - 2.0 * ell_SH, 2.0) * sqrt(-3.0 + 2.0 * ell_SH) * sqrt(1.0 + 2.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * sqrt(4.0 + 4.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * spin_Y_2Plusl_m;
-        complex<double> denom_gamm_sq = 2.0 * sqrt(-3.0 + 2.0 * ell_SH) * sqrt(1.0 + 2.0 * ell_SH) * sqrt(5.0 + 2.0 * ell_SH) * pow(-3.0 + 4.0 * ell_SH + 4.0 * pow(ell_SH, 2.0), 2.0);
-        complex<double> gamm_qaur_term1_nom = sqrt(ell_SH * ell_SH - m_SH * m_SH) * sqrt(9.0 - 6.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * sqrt(4.0 - 4.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * sqrt(1.0 - 2.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * spin_Y_Min4Plusl_m;
-        complex<double> gamm_qaur_term1_denom = sqrt(-7.0 + 2.0 * ell_SH) * (-5.0 + 2.0 * ell_SH) * sqrt(1.0 + 2.0 * ell_SH) * pow(3.0 -8.0 * ell_SH + 4.0 * ell_SH * ell_SH, 2.0);
-        complex<double> gamm_qaur_term1 = gamm_qaur_term1_nom / gamm_qaur_term1_denom;
-        
-        complex<double> gamm_qaur_term2_nom = 8.0 * sqrt(ell_SH * ell_SH - m_SH * m_SH) * sqrt(1.0 - 2.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * (-1.0 + 4.0 * m_SH * m_SH) * spin_Y_Min2Plusl_m;
-        complex<double> gamm_qaur_term2_denom = pow(1.0 - 2.0 * ell_SH, 4.0) * (-5.0 + 2.0 * ell_SH) * sqrt(-3.0 + 2.0 * ell_SH) * sqrt(1.0 + 2.0 * ell_SH) * (3.0 + 2.0 * ell_SH);
-        complex<double> gamm_qaur_term2 = gamm_qaur_term2_nom / gamm_qaur_term2_denom;
-        
-        complex<double> gamm_qaur_term3_nom = ((ell_SH * ell_SH - m_SH * m_SH) * (1.0 - 2.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) / (pow(1.0 - 2.0 * ell_SH, 4.0) * (-3.0 + 2.0 * ell_SH)) + ((1.0 + 2.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * (4.0 + 4.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH)) / (pow(3.0 + 2.0 * ell_SH, 4.0) * (5.0 + 2.0 * ell_SH))) * spin_Y_l_m;
-        complex<double> gamm_qaur_term3_denom = 1.0 + 2.0 * ell_SH;
-        complex<double> gamm_qaur_term3 = gamm_qaur_term3_nom / gamm_qaur_term3_denom;
-        
-        complex<double> gamm_qaur_term4_nom = 8.0 * sqrt(1.0 + 2.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * sqrt(4.0 + 4.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * (-1.0 + 4.0 * m_SH * m_SH) * spin_Y_2Plusl_m;
-        complex<double> gamm_qaur_term4_denom = (-1.0 + 2.0 * ell_SH) * sqrt(1.0 + 2.0 * ell_SH) * pow(3.0 + 2.0 * ell_SH, 4.0) * sqrt(5.0 + 2.0 * ell_SH) * (7.0 + 2.0 * ell_SH);
-        complex<double> gamm_qaur_term4 = gamm_qaur_term4_nom / gamm_qaur_term4_denom;
-        
-        complex<double> gamm_qaur_term5_nom = sqrt(1.0 + 2.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * sqrt(4.0 + 4.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * sqrt(9.0 + 6.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * sqrt(16.0 + 8.0 * ell_SH + ell_SH * ell_SH - m_SH * m_SH) * spin_Y_4Plusl_m;
-        complex<double> gamm_qaur_term5_denom = sqrt(1.0 + 2.0 * ell_SH) * pow(3.0 + 2.0 * ell_SH, 2.0) * pow(5.0 + 2.0 * ell_SH, 2.0) * (7.0 + 2.0 * ell_SH);
-        complex<double> gamm_qaur_term5 = gamm_qaur_term5_nom / gamm_qaur_term5_denom;
-        
-        complex<double> phi_ang = spin_Y_l_m + m_params.spheroidicity_param * nom_gamm_sq / denom_gamm_sq + 1.0/8.0 * m_params.spheroidicity_param * m_params.spheroidicity_param * (gamm_qaur_term1 - gamm_qaur_term2 - gamm_qaur_term3 + gamm_qaur_term4 + gamm_qaur_term5);
-
-        double phi_ang_real = real(spin_Y_l_m);
+        double phi_ang_real = real(phi_ang);
 
         double phi_tot = phi * phi_ang_real;
 
