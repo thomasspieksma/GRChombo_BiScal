@@ -15,7 +15,7 @@ ax1.plot(data[:,0], data[:,-2], label = r'$x = 0M$')
 # ax1.plot(data_lineout[:,0], data_lineout[:,7], label = r'$x = 9.6M$')
 # ax1.plot(data_lineout[:,0], data_lineout[:,8], label = r'$x = 11.2M$')
 # ax1.plot(data_lineout[:,0], data_lineout[:,9], label = r'$x = 12.8M$')
-# ax1.plot(data_lineout[:,0], data_lineout[:,10], label = r'$x = 14.4M$')
+# ax1.plot(data_lineout[:,0], data_lineout[:,10], l4abel = r'$x = 14.4M$')
 
 ax2.plot(data2[:,0], data2[:,-1], label = r'$x = 14.40M$')
 # ax2.plot(data[:,0], data[:,2], label = r'$||\mathcal{M}||$')

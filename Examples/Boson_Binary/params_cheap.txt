@@ -7,7 +7,7 @@
 verbosity = 0
 
 # location / naming of output files
-output_path = "/lustre/astro/spieksma/Sims_Scalar/Boson_Cloud_Binary" # Main path for all files. Must exist!
+output_path = "/lustre/astro/spieksma/Sims_Scalar/Boson_Cloud_Binary2" # Main path for all files. Must exist!
 chk_prefix = ScalarField_
 plot_prefix = ScalarFieldp_
 
@@ -73,11 +73,11 @@ max_level = 7 # There are (max_level+1) grids, so min is zero
 # Need one for each level except the top one, ie max_level items
 # Generally you do not need to regrid frequently on every level
 # in this example turn off regridding on all levels
-# Level Regridding: 0   1   2   3   4   5
-regrid_interval   = 0   0   0   0   0   0
+# Level Regridding: 0   1   2   3   4   5   6   7   8 
+regrid_interval   = 0   0   0   0   0   0   0   0   0
 # regrid_threshold  = 0.5
 
-regrid_interval = 0 0 0 0 0 0
+regrid_interval = 0 0 0 0 0 0 0 0
 
 # Max and min box sizes
 max_box_size = 32
@@ -115,7 +115,7 @@ vars_parity            = 0 0 4 6 0 5 0    #chi and hij
                          0 1 2 3          #Theta and Gamma
                          0 1 2 3 1 2 3    #lapse shift and B
                          0 0              #phi and Pi
-vars_parity_diagnostic = 0 1 2 3          #Ham and Mom
+vars_parity_diagnostic = 0 1 0 0 2 3 0 0 0 0 0 0         #Ham and Mom
 
 # if sommerfeld boundaries selected, must select
 # non zero asymptotic values
@@ -162,6 +162,26 @@ sigma = 0.5
 
 # min_chi = 1.e-4
 # min_lapse = 1.e-4
+
+#################################################
+# Extraction parameters
+
+# extraction_center = 256 256 256 # defaults to center
+activate_extraction = 1
+num_extraction_radii = 2
+extraction_radii = 10.0 12.0
+extraction_levels = 2 1
+num_points_phi = 24
+num_points_theta = 37
+num_modes = 2
+modes = 2 0 # l m for spherical harmonics
+        2 2
+
+# integral_file_prefix = "Weyl4_mode_"
+
+write_extraction = 1
+extraction_subpath = /extraction # directory for 'write_extraction = 1'
+extraction_file_prefix = "flux_Phi_extraction_"
 
 #################################################
 # Apparent Horizon Finder parameters

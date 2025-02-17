@@ -1,505 +1,343 @@
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
- !!!
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-ParmParse::queryarr too many values requested for last occurence of vars_parity_diagnostic
-(N,4) vars_parity_diagnostic ::  (=,0) (=,1) (=,2) (=,3)
- !!!
-srun: error: node690: tasks 169-170,173,176-177,180-181,183-186,188: Aborted (core dumped)
-srun: Terminating StepId=49938267.0
-slurmstepd: error: *** STEP 49938267.0 ON node683 CANCELLED AT 2025-02-13T11:42:34 ***
-srun: error: node683: tasks 0,2-3,5,8-11,14-19,21-23: Aborted (core dumped)
-srun: error: node686: tasks 72-78,81-89,91-94: Aborted (core dumped)
-srun: error: node685: tasks 48-49,51-52,54-58,60-62,64,67-69: Aborted (core dumped)
-srun: error: node685: tasks 59,65-66,70-71: Aborted (core dumped)
-srun: error: node683: tasks 1,6-7,12-13: Aborted (core dumped)
-srun: error: node686: task 80: Aborted (core dumped)
-srun: error: node690: tasks 175,189: Terminated
-srun: error: node690: tasks 178-179,182,191: Aborted (core dumped)
-srun: error: node685: task 53: Terminated
-srun: error: node686: task 90: Terminated
-srun: error: node690: tasks 174,190: Terminated
-srun: error: node685: task 50: Terminated
-srun: error: node683: task 20: Terminated
-srun: error: node686: task 95: Terminated
-srun: error: node690: tasks 168,172: Terminated
-srun: error: node686: task 79: Terminated
-srun: error: node683: task 4: Terminated
-srun: error: node685: task 63: Terminated
-srun: error: node690: tasks 171,187: Terminated
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+srun: Job step aborted: Waiting up to 602 seconds for job step to finish.
+slurmstepd: error: *** JOB 49976758 ON node682 CANCELLED AT 2025-02-17T12:05:40 ***
+slurmstepd: error: *** STEP 49976758.0 ON node682 CANCELLED AT 2025-02-17T12:05:40 ***
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!

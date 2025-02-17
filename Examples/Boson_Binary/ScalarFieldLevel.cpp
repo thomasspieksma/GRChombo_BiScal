@@ -34,6 +34,7 @@
 #include "Potential.hpp"
 #include "ScalarField.hpp"
 #include "SetValue.hpp"
+#include "ScalarWavesExtraction.hpp"
 
 // Things to do at each advance step, after the RK4 is calculated
 void ScalarFieldLevel::specificAdvance()
@@ -257,8 +258,39 @@ void ScalarFieldLevel::specificPostTimeStep()
             m_state_diagnostics, m_state_diagnostics, SKIP_GHOST_CELLS,
             disable_simd());
 
-        if (m_level == min_level)
+    if (m_p.activate_extraction == 1)
+    {
+        int min_level = m_p.extraction_params.min_extraction_level();
+        bool calculate_flux = at_level_timestep_multiple(min_level);
+        if (calculate_flux)
         {
+            // // Populate the Weyl Scalar values on the grid
+            // fillAllGhosts();
+            // BoxLoops::loop(
+            //     Weyl4(m_p.extraction_params.center, m_dx, m_p.formulation),
+            //     m_state_new, m_state_diagnostics, EXCLUDE_GHOST_CELLS);
+
+            // Do the extraction on the min extraction level
+            if (m_level == min_level)
+            {
+                CH_TIME("ScalarWavesExtraction");
+                // Now refresh the interpolator and do the interpolation
+                // fill ghosts manually to minimise communication
+                bool fill_ghosts = false;
+                m_gr_amr.m_interpolator->refresh(fill_ghosts);
+                m_gr_amr.fill_multilevel_ghosts(
+                    VariableType::diagnostic, Interval(c_phi_flux, c_phi_flux2),
+                    min_level);
+                ScalarWavesExtraction my_extraction(m_p.extraction_params, m_dt,
+                                             m_time, first_step,
+                                             m_restart_time);
+                my_extraction.execute_query(m_gr_amr.m_interpolator);
+            }
+        }
+    }
+
+        if (m_level == min_level)
+        {            
             // AMRReductions for diagnostic variables
             AMRReductions<VariableType::diagnostic> amr_reductions_diagnostic(
                 m_bh_amr);
