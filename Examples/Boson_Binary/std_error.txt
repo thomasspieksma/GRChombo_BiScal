@@ -1,3 +1,20 @@
+Parameter: modes[0] = (1, 1) is invalid: l must be >= 2 and m must satisfy -l <= m <= l !!!
+srun: error: node694: task 0: Aborted (core dumped)
+srun: Terminating StepId=49980058.0
+slurmstepd: error: *** STEP 49980058.0 ON node694 CANCELLED AT 2025-02-18T00:04:37 ***
+srun: error: node701: task 52: Terminated
+srun: error: node702: tasks 74,79,81: Terminated
+srun: error: node726: tasks 96-119: Terminated
+srun: error: node694: tasks 1-23: Terminated
+srun: error: node732: tasks 120-143: Terminated
+srun: error: node702: tasks 72-73,75-76,78,80,82-95: Terminated
+srun: error: node737: tasks 144-167: Terminated
+srun: error: node740: tasks 168-191: Terminated
+srun: error: node699: tasks 24-47: Terminated
+srun: error: node701: tasks 48-51,53-59,61,63-64,68-71: Terminated
+srun: error: node702: task 77: Terminated
+srun: error: node701: tasks 60,62,65-67: Terminated
+srun: Force Terminated StepId=49980058.0
 SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
 this num_points_u; reverting to trapezium rule. !!!
 SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
@@ -26,9 +43,414 @@ SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u 
 this num_points_u; reverting to trapezium rule. !!!
 SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
 this num_points_u; reverting to trapezium rule. !!!
-srun: Job step aborted: Waiting up to 602 seconds for job step to finish.
-slurmstepd: error: *** JOB 49976758 ON node682 CANCELLED AT 2025-02-17T12:05:40 ***
-slurmstepd: error: *** STEP 49976758.0 ON node682 CANCELLED AT 2025-02-17T12:05:40 ***
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
+SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
+this num_points_u; reverting to trapezium rule. !!!
 SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with
 this num_points_u; reverting to trapezium rule. !!!
 SurfaceExtraction<SurfaceGeometry>::integrate: Provided IntegrationMethod for u is not valid with

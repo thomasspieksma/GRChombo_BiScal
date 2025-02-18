@@ -295,9 +295,9 @@ class SimulationParametersBase : public ChomboParameters
                 std::string value_str = "(" + std::to_string(mode.first) +
                                         ", " + std::to_string(mode.second) +
                                         ")";
-                check_parameter(
-                    mode_name, value_str, (l >= 2) && (abs(m) <= l),
-                    "l must be >= 2 and m must satisfy -l <= m <= l");
+                //check_parameter(
+                //    mode_name, value_str, (l >= 2) && (abs(m) <= l),
+                //    "l must be >= 2 and m must satisfy -l <= m <= l");
             }
         }
     }

@@ -174,7 +174,7 @@ extraction_levels = 2 1
 num_points_phi = 24
 num_points_theta = 37
 num_modes = 2
-modes = 2 0 # l m for spherical harmonics
+modes = 1 1 # l m for spherical harmonics
         2 2
 
 # integral_file_prefix = "Weyl4_mode_"
