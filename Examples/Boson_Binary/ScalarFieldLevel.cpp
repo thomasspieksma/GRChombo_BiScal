@@ -276,15 +276,15 @@ void ScalarFieldLevel::specificPostTimeStep()
                 CH_TIME("ScalarWavesExtraction");
                 // Now refresh the interpolator and do the interpolation
                 // fill ghosts manually to minimise communication
-                bool fill_ghosts = false;
-                m_gr_amr.m_interpolator->refresh(fill_ghosts);
-                m_gr_amr.fill_multilevel_ghosts(
-                    VariableType::diagnostic, Interval(c_phi_flux, c_phi_flux2),
-                    min_level);
-                ScalarWavesExtraction my_extraction(m_p.extraction_params, m_dt,
+                //bool fill_ghosts = false;
+                //m_gr_amr.m_interpolator->refresh(fill_ghosts);
+                //m_gr_amr.fill_multilevel_ghosts(
+                //    VariableType::diagnostic, Interval(c_phi_flux, c_phi_flux2),
+                //    min_level);
+                ScalarWavesExtraction phi_extraction(m_p.extraction_params, m_dt,
                                              m_time, first_step,
                                              m_restart_time);
-                my_extraction.execute_query(m_gr_amr.m_interpolator);
+                phi_extraction.execute_query(m_gr_amr.m_interpolator);
             }
         }
     }

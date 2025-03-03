@@ -20,8 +20,9 @@ class ScalarWavesExtraction : public SphericalExtraction
         : SphericalExtraction(a_params, a_dt, a_time, a_first_step,
                               a_restart_time)
     {
-        add_var(c_phi_flux, VariableType::diagnostic);
-        add_var(c_phi_flux2, VariableType::diagnostic);
+        add_var(c_phi, VariableType::evolution);
+        //add_var(c_phi_flux, VariableType::diagnostic);
+        //add_var(c_phi_flux2, VariableType::diagnostic);
     }
 
     //! The old constructor which assumes it is called in specificPostTimeStep
@@ -48,11 +49,17 @@ class ScalarWavesExtraction : public SphericalExtraction
             mode_integrals(m_num_modes);
 
         // note that this is normalised by multiplying by radius
-        auto normalised_phi_complex =
+        auto normalised_phi =
             [](std::vector<double> phi_parts, double r, double, double)
         {
-            return std::make_pair(r * phi_parts[0],
-                                  r * phi_parts[1]);
+
+            // here the std::vector<double> passed will have the
+            // values of scalar_Re = scalar and scalar_Im = 0.0 as its first two
+            // components
+            return std::make_pair(r * phi_parts[0], 0.0);
+
+            //return std::make_pair(r * phi_parts[0],
+            //                      r * phi_parts[1]);
         };
 
         // add the modes that will be integrated
@@ -61,7 +68,7 @@ class ScalarWavesExtraction : public SphericalExtraction
             const auto &mode = m_modes[imode];
             constexpr int es = 0;
             add_mode_integrand(es, mode.first, mode.second,
-                               normalised_phi_complex, mode_integrals[imode]);
+                               normalised_phi, mode_integrals[imode]);
         }
 
         // do the integration over the surface
@@ -77,7 +84,7 @@ class ScalarWavesExtraction : public SphericalExtraction
             std::vector<std::vector<double>> integrals_for_writing = {
                 std::move(mode_integrals[imode].first),
                 std::move(mode_integrals[imode].second)};
-            std::vector<std::string> labels = {"integral1", "integral2"};
+            std::vector<std::string> labels = {"integral Re", "integral Im"};
             write_integrals(integrals_filename, integrals_for_writing, labels);
         }
     }

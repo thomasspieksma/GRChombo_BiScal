@@ -110,20 +110,20 @@ class CustomExtraction
 
 
         std::vector<std::string> header_line(m_num_points);
-        // if (first_step)
-        // {
-        //     header_line[0] = "Ham";
-        //     header_line[1] = "Mom";
-        //     output_file.write_header_line(header_line, "x");
-        // }
+        if (first_step)
+        {
+            header_line[0] = "Ham";
+            header_line[1] = "Mom";
+            output_file.write_header_line(header_line, "x");
+        }
 
-        // for (int idx = 0; idx < m_num_points; ++idx)
-        // {
-        //     std::vector<double> data(2);
-        //     data[0] = interp_ham_data[idx];
-        //     data[1] = interp_mom_data[idx];
-        //     output_file.write_data_line(data, interp_x[idx]);
-        // }
+        for (int idx = 0; idx < m_num_points; ++idx)
+        {
+            std::vector<double> data(2);
+            data[0] = interp_ham_data[idx];
+            data[1] = interp_mom_data[idx];
+            output_file.write_data_line(data, interp_x[idx]);
+        }
         if (first_step)
         {
             for (int i = 0; i < m_num_points; ++i)
