@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 data = np.genfromtxt("/lustre/astro/spieksma/Sims_Scalar/Boson_Cloud_Binary/data/data_out.dat")
-data2 = np.genfromtxt("/lustre/astro/spieksma/Sims_Scalar/Boson_Cloud_Binary/data/phi_lineout.dat")
+# data2 = np.genfromtxt("/lustre/astro/spieksma/Sims_Scalar/Boson_Cloud_Binary/data/phi_lineout.dat")
 # data_lineout = np.genfromtxt("/lustre/astro/spieksma/Sims_Scalar/Sims_Scalar/data_line_ex_phi/phi_lineout.dat")
 
 fig,(ax1,ax2) = plt.subplots(2,1,sharex=True,figsize = (9,8))
@@ -17,7 +17,7 @@ ax1.plot(data[:,0], data[:,-2], label = r'$x = 0M$')
 # ax1.plot(data_lineout[:,0], data_lineout[:,9], label = r'$x = 12.8M$')
 # ax1.plot(data_lineout[:,0], data_lineout[:,10], l4abel = r'$x = 14.4M$')
 
-ax2.plot(data2[:,0], data2[:,-1], label = r'$x = 14.40M$')
+# ax2.plot(data2[:,0], data2[:,-1], label = r'$x = 14.40M$')
 # ax2.plot(data[:,0], data[:,2], label = r'$||\mathcal{M}||$')
 
 # ax2.plot(data_hr2[:,0], data_hr2[:,1], label = r'$||\mathcal{H}||_{2}$')

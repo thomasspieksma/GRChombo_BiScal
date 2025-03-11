@@ -20,7 +20,7 @@ Mom_LR = np.loadtxt('/lustre/astro/spieksma/Sims_Scalar/Boson_Cloud_LR/data/cons
 x_HR = np.loadtxt('/lustre/astro/spieksma/Sims_Scalar/Boson_Cloud_HR/data/constraint_lineout.dat')[:,0]
 Ham_HR = np.loadtxt('/lustre/astro/spieksma/Sims_Scalar/Boson_Cloud_HR/data/constraint_lineout.dat')[:,1]
 Mom_HR = np.loadtxt('/lustre/astro/spieksma/Sims_Scalar/Boson_Cloud_HR/data/constraint_lineout.dat')[:,2]
-
+# print(Mom_LR)
 fig = plt.figure(figsize=(8,6))
 ax1 = plt.subplot(211)
 ax2 = plt.subplot(212)
@@ -35,12 +35,12 @@ label2 = r"$N^3=64^3$"
 
 # Make the plot 
 ax1.plot(x_HR, abs(Ham_HR),c="lime", label=label1)
-ax1.plot(x_LR, abs(Ham_LR),c="r", label=label2)
-ax1.plot(x_LR, abs(Ham_LR/factor),c="k",ls="--", label="2nd order")
+ax1.plot(x_LR, abs(Ham_LR),c="r", ls="--",label=label2)
+ax1.plot(x_LR, abs(Ham_LR/factor),c="k",ls="dotted", label="2nd order")
 
 ax2.plot(x_HR, Mom_HR,c="lime")
-ax2.plot(x_LR, Mom_LR,c="r")
-ax2.plot(x_LR, Mom_LR/factor,c="k",ls="--")
+ax2.plot(x_LR, Mom_LR,ls="--",c="r")
+ax2.plot(x_LR, Mom_LR/factor,c="k",ls="dotted")
 
 ax1.set_yscale('log')
 ax2.set_yscale('log')

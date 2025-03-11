@@ -4,7 +4,7 @@
 #################################################
 # Filesystem parameters
 
-verbosity = 2
+verbosity = 0
 
 # location / naming of output files
 output_path = "/lustre/astro/spieksma/Sims_Scalar/Boson_Cloud_LR" # Main path for all files. Must exist!
@@ -101,8 +101,8 @@ isPeriodic = 0 0 0
 # 0 = static, 1 = sommerfeld, 2 = reflective
 # 3 = extrapolating, 4 = mixed
 # (see BoundaryConditions.hpp for details)
-hi_boundary = 4 4 2
-lo_boundary = 2 2 2
+hi_boundary = 1 1 1
+lo_boundary = 1 1 2
 
 # if reflective boundaries selected, must set
 # parity of all vars (in order given by UserVariables.hpp)
