@@ -1,1 +1,48 @@
-slurmstepd: error: *** JOB 50149768 ON node719 CANCELLED AT 2025-03-11T08:36:37 DUE TO TIME LIMIT ***
+Parameter: scalar_mass = 0.2 warning: oscillations of scalar field do not appear to be resolved on coarsest level !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+Values have become nan. !!!
+srun: error: node705: tasks 12-23: Aborted (core dumped)
+srun: Terminating StepId=50366382.0
+slurmstepd: error: *** STEP 50366382.0 ON node699 CANCELLED AT 2025-03-21T11:06:58 ***
+srun: error: node706: tasks 24-31: Aborted (core dumped)
+srun: error: node699: tasks 0-11: Aborted (core dumped)
+srun: error: node706: tasks 32-35: Terminated
+srun: error: node749: tasks 84-89,91-95: Terminated
+srun: error: node747: tasks 61-71: Terminated
+srun: error: node745: tasks 36-37,39-47: Terminated
+srun: error: node749: task 90: Terminated
+srun: error: node746: tasks 48-59: Terminated
+srun: error: node745: task 38: Terminated
+srun: error: node747: task 60: Terminated
+srun: error: node748: tasks 72-83: Terminated
+srun: Force Terminated StepId=50366382.0

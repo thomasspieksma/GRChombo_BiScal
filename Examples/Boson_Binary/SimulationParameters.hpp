@@ -31,14 +31,14 @@ class SimulationParameters : public SimulationParametersBase
         pp.load("G_Newton", G_Newton, 1.0);
         pp.load("spheroidicity_param", initial_params.spheroidicity_param, 0.0);
         pp.load("scalar_mass", potential_params.scalar_mass, 0.2);
-        pp.load("kerr_mass", kerr_params.mass);
-        pp.load("kerr_spin", kerr_params.spin);
-        pp.load("kerr_center", kerr_params.center, center);
-        pp.load("kerr_spin_direction", kerr_params.spin_direction,
-                {0., 0., 1.});
-        pp.load("initial_data_prefix", initial_data_prefix);
+        // pp.load("kerr_mass", kerr_params.mass);
+        // pp.load("kerr_spin", kerr_params.spin);
+        // pp.load("kerr_center", kerr_params.center, center);
+        // pp.load("kerr_spin_direction", kerr_params.spin_direction,
+                // {0., 0., 1.});
+        // pp.load("initial_data_prefix", initial_data_prefix);
         pp.load("inner_r", inner_r, 0.0);
-        pp.load("outer_r", outer_r, 200.0);
+        pp.load("outer_r", outer_r, 250.0);
 
         // Lineout params
         pp.load("lineout_num_points", lineout_num_points, 10);

@@ -6,13 +6,20 @@
 // General includes common to most GR problems
 #include "ScalarFieldLevel.hpp"
 #include "AMRReductions.hpp"
+#include "BinaryBH.hpp"
 #include "BoxLoops.hpp"
+#include "CCZ4RHS.hpp"
+#include "TwoPuncturesBoxExtractionTaggingCriterion.hpp"
+#include "ChiExtractionTaggingCriterion.hpp"
+#include "ChiPunctureExtractionTaggingCriterion.hpp"
 #include "CustomExtraction.hpp"
 #include "NanCheck.hpp"
+#include "NewConstraints.hpp"
 #include "PositiveChiAndAlpha.hpp"
 #include "SixthOrderDerivatives.hpp"
 #include "IntegratedMovingPunctureGauge.hpp"
 #include "TraceARemoval.hpp"
+#include "SmallDataIO.hpp"
 
 // For RHS update
 #include "MatterCCZ4RHS.hpp"
@@ -30,11 +37,15 @@
 #include "MatterEnergy.hpp"
 #include "FluxExtraction.hpp"
 #include "KerrBH.hpp"
-#include "InitialSR_boson.hpp"
+// #include "InitialSR_boson.hpp"
 #include "Potential.hpp"
 #include "ScalarField.hpp"
+#include "PunctureTracker.hpp"
 #include "SetValue.hpp"
 #include "ScalarWavesExtraction.hpp"
+#include "TwoPuncturesInitialData.hpp"
+// #include "Weyl4.hpp"
+// #include "WeylExtraction.hpp"
 
 // Things to do at each advance step, after the RK4 is calculated
 void ScalarFieldLevel::specificAdvance()
@@ -53,8 +64,9 @@ void ScalarFieldLevel::specificAdvance()
 }
 
 // // Initial data for field and metric variables
-// void ScalarFieldLevel::initialData()
-// {
+void ScalarFieldLevel::initialData()
+{
+}
 //     CH_TIME("ScalarFieldLevel::initialData");
 //     if (m_verbosity)
 //         pout() << "ScalarFieldLevel::initialData " << m_level << endl;
@@ -98,6 +110,9 @@ void ScalarFieldLevel::specificAdvance()
 // restart from the initial condition solver output
 void ScalarFieldLevel::postRestart()
 {
+
+    //if (m_level==0) {m_gr_amr.regrid(m_level);}
+
     // On restart calculate the constraints on every level
     fillAllGhosts();
     Potential potential(m_p.potential_params);
@@ -187,6 +202,10 @@ void ScalarFieldLevel::specificEvalRHS(GRLevelData &a_soln, GRLevelData &a_rhs,
             my_ccz4_matter(scalar_field, m_p.ccz4_params, m_dx, m_p.sigma,
                            m_p.formulation, m_p.G_Newton);
         BoxLoops::loop(my_ccz4_matter, a_soln, a_rhs, EXCLUDE_GHOST_CELLS);
+        // TS added
+        BoxLoops::loop(CCZ4RHS<MovingPunctureGauge, FourthOrderDerivatives>(
+                           m_p.ccz4_params, m_dx, m_p.sigma, m_p.formulation),
+                       a_soln, a_rhs, EXCLUDE_GHOST_CELLS);
     }
     else if (m_p.max_spatial_derivative_order == 6)
     {
@@ -195,6 +214,10 @@ void ScalarFieldLevel::specificEvalRHS(GRLevelData &a_soln, GRLevelData &a_rhs,
             my_ccz4_matter(scalar_field, m_p.ccz4_params, m_dx, m_p.sigma,
                            m_p.formulation, m_p.G_Newton);
         BoxLoops::loop(my_ccz4_matter, a_soln, a_rhs, EXCLUDE_GHOST_CELLS);
+        // TS added
+        BoxLoops::loop(CCZ4RHS<MovingPunctureGauge, SixthOrderDerivatives>(
+                           m_p.ccz4_params, m_dx, m_p.sigma, m_p.formulation),
+                       a_soln, a_rhs, EXCLUDE_GHOST_CELLS);
     }
 }
 
@@ -208,19 +231,48 @@ void ScalarFieldLevel::specificUpdateODE(GRLevelData &a_soln,
 
 void ScalarFieldLevel::preTagCells()
 {
-    // we don't need any ghosts filled for the fixed grids tagging criterion
-    // used here so don't fill any
+    // We only use chi in the tagging criterion so only fill the ghosts for chi
+    fillAllGhosts(VariableType::evolution, Interval(c_chi, c_chi));
 }
 
 void ScalarFieldLevel::computeTaggingCriterion(
     FArrayBox &tagging_criterion, const FArrayBox &current_state,
     const FArrayBox &current_state_diagnostics)
 {
-    // If using symmetry of the box, adjust physical length
-    int symmetry = 1;
-    BoxLoops::loop(
-        FixedGridsTaggingCriterion(m_dx, m_level, m_p.L / symmetry, m_p.center),
-        current_state, tagging_criterion);
+if (m_p.track_punctures)
+    {
+        std::vector<double> puncture_masses;
+#ifdef USE_TWOPUNCTURES
+    // use calculated bare masses from TwoPunctures
+        puncture_masses = {m_tp_amr.m_two_punctures.mm,
+                        m_tp_amr.m_two_punctures.mp};
+#else
+        puncture_masses = {m_p.bh1_params.mass, m_p.bh2_params.mass};
+#endif /* USE_TWOPUNCTURES */
+
+        auto puncture_coords =
+            m_bh_amr.m_puncture_tracker.get_puncture_coords();
+        pout() << "I am tagging now, the masses are " << puncture_masses[0] << " " << puncture_masses[1] << endl;
+        BoxLoops::loop(TwoPuncturesBoxExtractionTaggingCriterion(
+                        m_dx, m_level, m_p.max_level, m_p.extraction_params,
+                        puncture_coords, m_p.activate_extraction,
+                        puncture_masses),
+                    current_state, tagging_criterion);
+    }
+else
+    {
+        // BoxLoops::loop(ChiExtractionTaggingCriterion(m_dx, m_level,
+        //                                             m_p.extraction_params,
+        //                                             m_p.activate_extraction),
+        //             current_state, tagging_criterion);
+    }
+
+    // //TS Commented out 
+    // // If using symmetry of the box, adjust physical length
+    // int symmetry = 1;
+    // BoxLoops::loop(
+    //     FixedGridsTaggingCriterion(m_dx, m_level, m_p.L / symmetry, m_p.center),
+    //     current_state, tagging_criterion);
 }
 
 void ScalarFieldLevel::specificPostTimeStep()
@@ -233,13 +285,31 @@ void ScalarFieldLevel::specificPostTimeStep()
     // timestep, but must happen on every level (not just level zero or data
     // will not be populated on finer levels)
 
+    // do puncture tracking on requested level
+    if (m_p.track_punctures && m_level == m_p.puncture_tracking_level)
+    {
+        CH_TIME("PunctureTracking");
+        // only do the write out for every coarsest level timestep
+        int coarsest_level = 0;
+        bool write_punctures = at_level_timestep_multiple(coarsest_level);
+        m_bh_amr.m_puncture_tracker.execute_tracking(m_time, m_restart_time,
+                                                     m_dt, write_punctures);
+    }
+
+    #ifdef USE_AHFINDER
+        if (m_p.AH_activate && m_level == m_p.AH_params.level_to_run)
+        {
+            if (m_p.AH_set_origins_to_punctures && m_p.track_punctures)
+            {
+                m_bh_amr.m_ah_finder.set_origins(
+                    m_bh_amr.m_puncture_tracker.get_puncture_coords());
+            }
+            m_bh_amr.m_ah_finder.solve(m_dt, m_time, m_restart_time);
+        }
+    #endif
+
     if (calculate_diagnostics)
     {
-        
-    #ifdef USE_AHFINDER
-    if (m_p.AH_activate && m_level == m_p.AH_params.level_to_run)
-        m_bh_amr.m_ah_finder.solve(m_dt, m_time, m_restart_time);
-    #endif
 
         fillAllGhosts();
         Potential potential(m_p.potential_params);

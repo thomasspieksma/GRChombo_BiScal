@@ -119,11 +119,16 @@ class InitialSR_boson
 
         double phi_ang_real = real(phi_ang);
 
-        double phi_tot = 0.0001 * phi * phi_ang_real;
+        double varphi = atan2(y, x);
+
+
+        double phi_tot = 0.01 * phi * phi_ang_real * cos(m_SH * varphi);
+
+        double pi_tot = sin(m_SH * varphi);
 
         // store the vars
         current_cell.store_vars(phi_tot, c_phi);
-        current_cell.store_vars(0.0, c_Pi);
+        current_cell.store_vars(pi_tot, c_Pi);
 
     }
 

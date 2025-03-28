@@ -1,0 +1,1 @@
+Parameter: scalar_mass = 0.2 warning: oscillations of scalar field do not appear to be resolved on coarsest level !!!
