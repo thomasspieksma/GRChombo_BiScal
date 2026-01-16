@@ -1,0 +1,19 @@
+Parameter: momentumB = 0.000000 0.000000 0.000000 is invalid: approximation used for boosted BH only valid for small boosts !!!
+srun: error: node820: task 0: Aborted (core dumped)
+srun: Terminating StepId=54753098.0
+slurmstepd: error: *** STEP 54753098.0 ON node820 CANCELLED AT 2025-10-30T17:16:14 ***
+srun: error: node823: tasks 12-23: Terminated
+srun: error: node833: tasks 60-71: Terminated
+srun: error: node831: tasks 48-59: Terminated
+srun: error: node834: tasks 72-83: Terminated
+srun: error: node843: tasks 84-95: Terminated
+srun: error: node828: tasks 24-30,32-35: Terminated
+srun: error: node820: tasks 2,4-9,11: Terminated
+srun: error: node830: tasks 36-37,39-41,43,45-47: Terminated
+srun: error: node820: task 10: Terminated
+srun: error: node830: tasks 42,44: Terminated
+srun: error: node830: task 38: Terminated
+srun: error: node828: task 31: Terminated
+srun: error: node820: task 3: Terminated
+srun: error: node820: task 1: Terminated
+srun: Force Terminated StepId=54753098.0
